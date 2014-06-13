@@ -1,0 +1,29 @@
+{
+  "name": "danae-portfolio",
+  "version": "0.0.1",
+  "authors": [
+    "Danaë Miller-Clendon <danae@infinity.io>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/thirdparty",
+    "test",
+    "tests",
+    "bower-thirdparty"
+  ],
+  "dependencies": {
+    "fitvids": "latest",
+    "jquery-backstretch": "latest",
+    "html5shiv": "latest",
+    "modernizr": "latest",
+    "FlowType.JS": "latest",
+    "fancyselect": "latest",
+    "fit.js": "latest",
+    "fancybox": "latest",
+    "console-shim": "latest",
+    "selectivizr": "latest"
+  }
+}

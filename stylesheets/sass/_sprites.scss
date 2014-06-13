@@ -1,0 +1,73 @@
+//==========================================================================================
+//				Sprite and Retina Sprite Generator - use filename as variable
+//==========================================================================================
+
+i.sprite{
+	display:inline-block;
+	@include retina-sprite(sprite);
+}
+
+i.nav-open-button {
+	display:inline-block;
+	@include retina-sprite(menu-btn);
+}
+
+//==========================================================================================
+//				Social icons
+//==========================================================================================
+
+i.social-facebook {
+  display:inline-block;
+  @include retina-sprite(social-fb);
+
+  &:hover {
+    @include retina-sprite(social-fb-hover);
+  }
+}
+
+
+i.social-twitter {
+  display:inline-block;
+  @include retina-sprite(social-twitter);
+
+  &:hover {
+    @include retina-sprite(social-twitter-hover);
+  }
+}
+
+
+i.social-instagram {
+  display:inline-block;
+  @include retina-sprite(social-insta);
+
+  &:hover {
+    @include retina-sprite(social-insta-hover);
+  }
+}
+
+//==========================================================================================
+//				UI
+//==========================================================================================
+
+i.ui-next {
+	display:inline-block;
+	@include retina-sprite(ui-next);
+
+	&:hover {
+		@include retina-sprite(ui-next-hover);
+	}
+}
+
+i.ui-prev {
+	display:inline-block;
+	@include retina-sprite(ui-prev);
+
+	&:hover {
+		@include retina-sprite(ui-prev-hover);
+	}
+}
+
+i.ui-warning {
+	display:inline-block;
+	@include retina-sprite(flag);
+}

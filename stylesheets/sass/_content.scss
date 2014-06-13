@@ -1,0 +1,45 @@
+//====>>	Main content styling
+
+*, *:before, *:after {
+    -moz-box-sizing    : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing         : border-box;
+}
+
+html, body {
+    height           : 100%;
+    background-color : $bg;
+    color            : $text;
+    font-family      : 'verdana';
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+// This is a sticky footer if you would like to use it!
+// Note that it needs to follow the HTML below
+// ====================================================
+// <div class="content">
+// 	<div class="push"></div>
+// </div>
+// <div class="sticky"></div>
+// ====================================================
+
+.content {
+    clear         : both;
+    min-height    : 100%;
+    height        : auto !important;
+    height        : 100%;
+    margin-bottom : -140px;
+}
+
+.push {
+    height : 140px;
+}
+
+.sticky {
+    height   : 100px;
+    clear    : both;
+    position : relative;
+}

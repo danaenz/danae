@@ -1,0 +1,60 @@
+//====>> MIXINS
+
+//Pseudo element mixin : @include pseudo
+@mixin pseudo {
+    position : absolute;
+    content  : '';
+}
+
+//Semantic Clearfix mixin @include clearfix
+@mixin clearfix {
+    &:before,
+    &:after {
+        content : "";
+        display : table;
+    }
+    &:after {
+        clear : both;
+    }
+}
+
+//Animation mixin with timing control @include timing-all($time)
+@mixin timing-all($time) {
+    -webkit-transition : all $time linear;
+    -moz-transition    : all $time linear;
+    -o-transition      : all $time linear;
+    transition         : all $time linear;
+}
+
+//Animation mixin with timing control @include timing-all($time)
+@mixin timing($target, $time, $easing) {
+    -webkit-transition : $target $time $easing;
+    -moz-transition    : $target $time $easing;
+    -o-transition      : $target $time $easing;
+    transition         : $target $time $easing;
+}
+
+//Type mixin that sets the font size in rem's with a px fallback.
+@mixin font-size($sizeValue : 12) {
+    font-size : $sizeValue + px;
+    font-size : (0.125 * $sizeValue) + rem;
+}
+
+//Type mixin that sets the line height in rem's with a px fallback.
+@mixin line-height($heightValue : 12) {
+    line-height : $heightValue + px;
+    line-height : (0.125 * $heightValue) + rem;
+}
+
+//============
+//  Content
+//============
+
+@mixin overlay-base($opacity : 0.7) {
+    position   : absolute;
+    font       : 18px $serif;
+    color      : $white;
+    background : rgba($black, $opacity);
+    width      : 100%;
+    z-index    : $lvl-overlay;
+}
