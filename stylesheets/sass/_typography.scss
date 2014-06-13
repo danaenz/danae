@@ -16,7 +16,7 @@
     }
 }
 
-//====>> TYPOGRAPHY STYLINGS
+//====>> SIZING
 
 body {
     font-size : 14px;
@@ -26,9 +26,40 @@ h1, h2, h3, h4, h5, h6, p {
     line-height : 1.45;
 }
 
-h1 { font-size: 4em; }
-h2 { font-size: 3.5em; }
+h1 { font-size: 5em; }
+h2 { font-size: 4em; }
 h3 { font-size: 3em; }
-h4 { font-size: 2.5em; }
-h5 { font-size: 2em; }
-h6 { font-size: 1.5em; }
+h4 { font-size: 2em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1em; }
+p { font-size: 1em; }
+
+//====>> FONT STYLINGS
+
+h1 {
+    font-family: $sans-serif;
+}
+
+h2 {
+    font-family: $serif;
+}
+
+p {
+    font-family: $serif;
+    font-style: italic;
+}
+
+//====>> LINKS
+
+.content {
+    a {
+        color: $link;
+        text-decoration: none;
+        border-bottom: 1px solid $link;
+
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $link-hover;
+        }
+    }
+}

@@ -17,6 +17,14 @@ html, body {
     @include clearfix;
 }
 
+//====>>	Header
+
+.main-header {
+    text-align: center;
+    margin-top: 2em;
+}
+
+
 // This is a sticky footer if you would like to use it!
 // Note that it needs to follow the HTML below
 // ====================================================
