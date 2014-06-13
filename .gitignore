@@ -1,3 +1,4 @@
 node_modules/
 .sass-cache/
 stylesheets/css/*.css
+bower_components/
