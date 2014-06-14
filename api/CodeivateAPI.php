@@ -34,11 +34,23 @@ class CodeivateAPI extends API
 
                 $languages = $this->response['languages'];
 
+                usort($languages, function($a, $b) {
+                    // compare numbers or strings
+                    return strcmp($b['level'], $a['level']);
+                });
+
+                print_r($languages);
+
                 return json_encode($languages);
             }
         } else {
             return $this->response('The "languages" endpoint only accepts GET requests', 405);
         }
     }
+
+    /*
+     * HELPERS
+     */
+
 }
 
