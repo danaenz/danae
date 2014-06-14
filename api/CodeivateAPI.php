@@ -16,8 +16,6 @@ class CodeivateAPI extends API
     {
         parent::__construct($request);
 
-
-        return 'hi';
         // Get the server response
         $response = file_get_contents($this->source);
 
@@ -33,6 +31,7 @@ class CodeivateAPI extends API
     {
         if ($this->method == 'GET') {
             if (isset($this->response['languages'])) {
+
                 $languages = $this->response['languages'];
 
                 return json_encode($languages);

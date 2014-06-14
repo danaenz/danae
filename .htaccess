@@ -1,11 +1,20 @@
 <IfModule mod_rewrite.c>
-   RewriteEngine On
+  SetEnv HTTP_MOD_REWRITE On
+	RewriteEngine On
+	RewriteBase '/danae'
 
-  RewriteBase /danae/
+#	RewriteRule ^vendor(/|$) - [F,L,NC]
 
-   RewriteCond %{REQUEST_FILENAME} !-f
-   RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_URI} ^(.*)$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !\.php$
 
-   RewriteRule ^api/v1/(.*)$ api/CodeivateAPI.php?request=$1 [QSA,NC,L]
+#  RewriteRule ^vendor(/|$) - [F,L,NC]
+
+#   RewriteCond %{REQUEST_URI} ^(.*)$
+#   	RewriteCond %{REQUEST_FILENAME} !-f
+#   	RewriteCond %{REQUEST_URI} !\.php$
+
+   RewriteRule ^api/v1/(.*)$ /api/index.php?request=$1 [QSA,NC,L]
 #   RewriteRule ^(.*)$ index.php?/$1 [L]
 </IfModule>

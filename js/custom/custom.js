@@ -14,7 +14,6 @@
                 dataType: 'json',
                 success: function(response){
                     console.log($.parseJSON(response));
-                    console.log(response);
                 },
                 fail: function(response){
                     console.log(response);
