@@ -4,19 +4,19 @@
 
 <body>
 
-<div class="content">
+<article class="content">
 
     <header class="main-header">
         <h1>danaë miller-clendon</h1>
-        <p>web developer at <a href="http://infinity.io">infinity</a></p>
+        <p>web developer at <a href="http://infinity.io" target="_blank">infinity</a></p>
     </header>
 
-    <article>
-        <p class='programming'></p>
-    </article>
+    <section class="codeivate">
+        <div id="js-character" class="sprite-character"></div>
+    </section>
 
     <div class="push"></div>
-</div>
+</article>
 
 <?php require_once 'includes/footer.inc.php'; ?>
 

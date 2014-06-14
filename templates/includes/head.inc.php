@@ -3,8 +3,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Danaë Miller-Clendon, PHP web developer based in Auckland, New Zealand. Currently working at Infinity making amazing things." />
 
-    <base href="<?php echo $baseTagHref ?>">
-
     <title>Danaë Miller-Clendon, PHP web developer based in Auckland, New Zealand</title>
 
     <!-- Favicons/Icons -->

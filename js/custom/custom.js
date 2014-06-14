@@ -6,25 +6,20 @@
                 maxFont: 20
             });
 
-            var url = "http://codeivate.com/users/Danae.json";
+            var url = "api/v1/languages";
 
-            $.getJSON(url,
-                function data(data) {
-                    var programming_now_message;
-                    console.dir(data);//check your browser console.
-
-                    if(data.programming_now) {
-                        programming_now_message = "Is programming right now in ";
-                        programming_now_message += data.current_language + ".";
-                        if(data.streaking_now) {
-                            programming_now_message += " He is in the zone!";
-                        }
-                    } else {
-                        programming_now_message = "Is not programming :(";
-                    }
-                    $('.programming').html(programming_now_message);
-
-                });
+            $.ajax({
+                type: 'GET',
+                url: url,
+                dataType: 'json',
+                success: function(response){
+                    console.log($.parseJSON(response));
+                    console.log(response);
+                },
+                fail: function(response){
+                    console.log(response);
+                }
+            });
 
         }
     );
