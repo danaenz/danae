@@ -11,9 +11,13 @@
         <p>web developer at <a href="http://infinity.io" target="_blank">infinity</a></p>
     </header>
 
+<!--    <div id="js-character" class="sprite-character"></div>-->
+    <div id="js-character" class="sprite-character"></div>
+
     <section class="codeivate">
-        <div id="js-character" class="sprite-character"></div>
     </section>
+
+    <div id="doughnutChart" class="chart"></div>
 
     <div class="push"></div>
 </article>

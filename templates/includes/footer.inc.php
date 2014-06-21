@@ -5,5 +5,6 @@
 <!-- Useful plugins that are often used -->
 <script src="/js/thirdparty.combined.min.js"></script>
 <!-- Third Party -->
+<script src="/js/thirdparty/jquery.drawDoughnutChart.js"></script>
 <!-- Include all of your main custom functions in this file -->
 <script src="/js/main.min.js"></script>

@@ -3,6 +3,17 @@
 //==========================================================================================
 
 .sprite-character {
-    display: inline-block;
-    @include retina-sprite(sprite);
+    background-image: url('../../images/sprites/sprite.png');
+    width: 35.2%;
+    height: 0;
+    padding-bottom: 37%;
+    background-position: 0 0;
+    background-size: 100%;
+    display: block;
+    top: 50%;
+    position: absolute;
+    margin: -15% 0 0 32.3%;
+    max-width: 315px;
+    max-height: 330px;
+    background-repeat: no-repeat;
 }

@@ -25,7 +25,8 @@ module.exports = function (grunt) {
                     'bower_components/jquery.transit/jquery.transit.js',
                     'bower_components/jquery-backstretch/jquery.backstretch.js',
                     'bower_components/FlowType.JS/flowtype.js',
-                    'bower_components/fit.js/fit.js'
+                    'bower_components/fit.js/fit.js',
+                    'js/thirdparty/jquery.drawDoughnutChart.js'
                 ],
                 dest: 'js/thirdparty.combined.min.js'
             },
