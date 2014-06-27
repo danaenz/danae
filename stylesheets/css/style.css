@@ -209,12 +209,22 @@ html, body {
   height: 330px;
   background-position: 0 0;
   background-size: 100%;
-  display: block;
   top: 52%;
   left: 50%;
   position: absolute;
   margin: -130px 0 0 -160px;
   background-repeat: no-repeat;
+  display: none;
+}
+
+/* line 24, ../sass/_sprites.scss */
+.sprite-character-flow {
+  background-image: url("../../images/sprites/sprite-flow.png");
+}
+
+/* line 28, ../sass/_sprites.scss */
+.sprite-character-programming {
+  background-image: url("../../images/sprites/sprite-programming.png");
 }
 
 /* line 1, ../sass/_chart.scss */

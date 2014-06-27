@@ -9,7 +9,7 @@
 //    padding-bottom: 37%;
     background-position: 0 0;
     background-size: 100%;
-    display: block;
+//    display: block;
     top: 52%;
     left     : 50%;
     position: absolute;
@@ -17,4 +17,14 @@
 //    max-width: 315px;
 //    max-height: 330px;
     background-repeat: no-repeat;
+
+    display: none;
+}
+
+.sprite-character-flow {
+    background-image: url('../../images/sprites/sprite-flow.png');
+}
+
+.sprite-character-programming {
+    background-image: url('../../images/sprites/sprite-programming.png');
 }

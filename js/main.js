@@ -6,6 +6,8 @@
                 maxFont: 20
             });
 
+            var $char = $('#js-character');
+
             var url = "http://codeivate.com/users/Danae.json";
             var donut = [];
             var i = 0;
@@ -33,6 +35,14 @@
 
                 var programmingNow = data.programming_now;
                 var streakingNow = data.streaking_now;
+
+                if (programmingNow) {
+                    $char.addClass('sprite-character-programming');
+                }
+
+                if (streakingNow) {
+                    $char.addClass('sprite-character-flow');
+                }
 
                 var languages = data.languages;
 
@@ -68,6 +78,8 @@
                         summaryNumberClass: 'donut-summary-number'
                     }
                 );
+
+                $char.fadeIn();
 
             });
 
