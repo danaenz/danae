@@ -10,7 +10,6 @@
             var donut = [];
             var i = 0;
             var colours = [
-
                 '#E08E79',
                 '#F1D4AF',
                 '#ECE5CE',
@@ -29,6 +28,11 @@
                 url: url,
                 dataType: 'jsonp'
             }).done(function(data) {
+
+                console.log(data);
+
+                var programmingNow = data.programming_now;
+                var streakingNow = data.streaking_now;
 
                 var languages = data.languages;
 
@@ -78,7 +82,7 @@
             function shuffle(o){
                 for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
                 return o;
-            };
+            }
         }
     );
 })(jQuery);

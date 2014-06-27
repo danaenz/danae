@@ -2,7 +2,7 @@
     position : absolute;
     width    : 550px;
     height   : 550px;
-    top      : 50%;
+    top      : 52%;
     left     : 50%;
     margin   : -225px 0 0 -275px;
 
@@ -55,6 +55,7 @@
 }
 
 .donut-summary-title {
+    display : none;
     position       : absolute;
     top            : 50%;
     width          : 100%;
@@ -64,6 +65,7 @@
 }
 
 .donut-summary-number {
+    display : none;
     position   : absolute;
     top        : 50%;
     width      : 100%;
