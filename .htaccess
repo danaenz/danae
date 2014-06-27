@@ -1,20 +1,14 @@
 <IfModule mod_rewrite.c>
-  SetEnv HTTP_MOD_REWRITE On
-	RewriteEngine On
-#	RewriteBase /danae
+    SetEnv HTTP_MOD_REWRITE On
+    RewriteEngine On
 
-#	RewriteRule ^vendor(/|$) - [F,L,NC]
+    RewriteCond %{REQUEST_URI} ^(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !\.php$
 
-	RewriteCond %{REQUEST_URI} ^(.*)$
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_URI} !\.php$
+    RewriteCond %{REQUEST_URI} ^(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !\.php$
 
-#  RewriteRule ^vendor(/|$) - [F,L,NC]
-
-   RewriteCond %{REQUEST_URI} ^(.*)$
-   	RewriteCond %{REQUEST_FILENAME} !-f
-   	RewriteCond %{REQUEST_URI} !\.php$
-
-#   RewriteRule ^api/v1/(.*)$ /api/index.php?request=$1 [QSA,NC,L]
-   RewriteRule ^(.*)$ index.php?/$1 [L]
+    RewriteRule ^(.*)$ index.php?/$1 [L]
 </IfModule>
