@@ -2,6 +2,8 @@
     SetEnv HTTP_MOD_REWRITE On
     RewriteEngine On
 
+    RewriteRule   ^robots.txt$ robots.txt.php [L]
+
     RewriteCond %{REQUEST_URI} ^(.*)$
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_URI} !\.php$
