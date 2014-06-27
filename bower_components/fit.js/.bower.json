@@ -1,0 +1,30 @@
+{
+  "name": "fit.js",
+  "main": "fit.js",
+  "homepage": "http://soulwire.github.io/fit.js/",
+  "authors": [
+    "Justin Windle <justin@soulwire.co.uk>"
+  ],
+  "description": "Fit things into other things",
+  "keywords": [
+    "fit",
+    "things"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "74b6ef79a5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "74b6ef79a5cb1cda95a88c4b0c467c1c2eadbd54"
+  },
+  "_source": "git://github.com/soulwire/fit.js.git",
+  "_target": "*",
+  "_originalSource": "fit.js"
+}
