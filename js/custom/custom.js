@@ -1,10 +1,6 @@
 (function ($) {
     $(document).ready(
         function () {
-            $('body').flowtype({
-                minFont: 10,
-                maxFont: 20
-            });
 
             var $char = $('#js-character');
 
@@ -35,9 +31,14 @@
 
                 var programmingNow = data.programming_now;
                 var streakingNow = data.streaking_now;
+                var currentLanguage = data.current_language;
 
                 if (programmingNow) {
                     $char.addClass('sprite-character-programming');
+
+                    if (currentLanguage) {
+                        $char.find('.char-tooltip').html('Programming now in ' + currentLanguage);
+                    }
                 }
 
                 if (streakingNow) {
@@ -54,7 +55,8 @@
                         donut.push({
                             title: index,
                             value: langVal,
-                            color: colours[i]
+                            color: colours[i],
+                            active: currentLanguage == index
                         });
 
                         i++;
@@ -75,7 +77,8 @@
                         tipClass: 'donut-tooltip',
                         summaryClass: 'donut-summary',
                         summaryTitleClass: 'donut-summary-title',
-                        summaryNumberClass: 'donut-summary-number'
+                        summaryNumberClass: 'donut-summary-number',
+                        showTipNumber: false
                     }
                 );
 

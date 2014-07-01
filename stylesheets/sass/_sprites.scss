@@ -3,28 +3,23 @@
 //==========================================================================================
 
 .sprite-character {
-    background-image: url('../../images/sprites/sprite.png');
-    width: 315px;
-    height: 330px;
-//    padding-bottom: 37%;
-    background-position: 0 0;
-    background-size: 100%;
-//    display: block;
-    top: 52%;
-    left     : 50%;
-    position: absolute;
-    margin: -130px 0 0 -160px;
-//    max-width: 315px;
-//    max-height: 330px;
-    background-repeat: no-repeat;
-
-    display: none;
+    background-image    : url('../../images/sprites/sprite.png');
+    width               : 168px;
+    height              : 180px;
+    background-position : 0 0;
+    background-size     : 100%;
+    top                 : 45%;
+    left                : 50%;
+    position            : absolute;
+    margin              : -84px 0 0 -84px;
+    background-repeat   : no-repeat;
+    display             : none;
 }
 
 .sprite-character-flow {
-    background-image: url('../../images/sprites/sprite-flow.png');
+    background-image : url('../../images/sprites/sprite-flow.png');
 }
 
 .sprite-character-programming {
-    background-image: url('../../images/sprites/sprite-programming.png');
+    background-image : url('../../images/sprites/sprite-programming.png');
 }

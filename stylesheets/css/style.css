@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 21, ../sass/_typography.scss */
 body {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* line 25, ../sass/_typography.scss */
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 29, ../sass/_typography.scss */
 h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 /* line 30, ../sass/_typography.scss */
@@ -205,24 +205,24 @@ html, body {
 /* line 5, ../sass/_sprites.scss */
 .sprite-character {
   background-image: url("../../images/sprites/sprite.png");
-  width: 315px;
-  height: 330px;
+  width: 168px;
+  height: 180px;
   background-position: 0 0;
   background-size: 100%;
-  top: 52%;
+  top: 45%;
   left: 50%;
   position: absolute;
-  margin: -130px 0 0 -160px;
+  margin: -84px 0 0 -84px;
   background-repeat: no-repeat;
   display: none;
 }
 
-/* line 24, ../sass/_sprites.scss */
+/* line 19, ../sass/_sprites.scss */
 .sprite-character-flow {
   background-image: url("../../images/sprites/sprite-flow.png");
 }
 
-/* line 28, ../sass/_sprites.scss */
+/* line 23, ../sass/_sprites.scss */
 .sprite-character-programming {
   background-image: url("../../images/sprites/sprite-programming.png");
 }
@@ -230,29 +230,27 @@ html, body {
 /* line 1, ../sass/_chart.scss */
 .chart {
   position: absolute;
-  width: 550px;
-  height: 550px;
-  top: 52%;
+  width: 250px;
+  height: 250px;
+  top: 45%;
   left: 50%;
-  margin: -225px 0 0 -275px;
+  margin: -125px 0 0 -125px;
+  cursor: pointer;
 }
 
 /* line 11, ../sass/_chart.scss */
 .donut-tooltip {
   position: absolute;
-  min-width: 30px;
-  max-width: 300px;
-  padding: 5px 15px;
-  border-radius: 1px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #DDD;
+  width: 100%;
+  top: 70%;
+  color: #5b5b5b;
+  font-family: "georgia", "palatino linotype", "serif";
+  font-style: italic;
   font-size: 17px;
-  text-shadow: 0 1px 0 #000;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-align: center;
   line-height: 1.3;
   letter-spacing: .06em;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -webkit-transform: all .3s;
   -moz-transform: all .3s;
   -ms-transform: all .3s;
@@ -260,21 +258,8 @@ html, body {
   transform: all .3s;
   pointer-events: none;
 }
-/* line 33, ../sass/_chart.scss */
-.donut-tooltip:after {
-  position: absolute;
-  left: 50%;
-  bottom: -6px;
-  content: "";
-  height: 0;
-  margin: 0 0 0 -6px;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  border-top: 6px solid rgba(0, 0, 0, 0.8);
-  line-height: 0;
-}
 
-/* line 47, ../sass/_chart.scss */
+/* line 32, ../sass/_chart.scss */
 .donut-summary {
   position: absolute;
   top: 50%;
@@ -285,7 +270,7 @@ html, body {
   cursor: default;
 }
 
-/* line 57, ../sass/_chart.scss */
+/* line 42, ../sass/_chart.scss */
 .donut-summary-title {
   display: none;
   position: absolute;
@@ -296,7 +281,7 @@ html, body {
   letter-spacing: .06em;
 }
 
-/* line 67, ../sass/_chart.scss */
+/* line 52, ../sass/_chart.scss */
 .donut-summary-number {
   display: none;
   position: absolute;
@@ -306,7 +291,81 @@ html, body {
   font-size: 55px;
 }
 
-/* line 76, ../sass/_chart.scss */
+/* line 60, ../sass/_chart.scss */
+g path {
+  opacity: 1;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+/* line 67, ../sass/_chart.scss */
 g path:hover {
   opacity: .65;
+}
+
+/* line 71, ../sass/_chart.scss */
+g path[data-active="true"] {
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+  /* line 77, ../sass/_chart.scss */
+  0% {
+    opacity: 0.3;
+  }
+
+  /* line 78, ../sass/_chart.scss */
+  30% {
+    opacity: 1.0;
+  }
+
+  /* line 79, ../sass/_chart.scss */
+  70% {
+    opacity: 1.0;
+  }
+
+  /* line 80, ../sass/_chart.scss */
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* line 83, ../sass/_chart.scss */
+#js-character .char-tooltip {
+  display: none;
+  position: absolute;
+  z-index: 210;
+  font-family: "pompiere", "verdana", "arial";
+  font-size: 20px;
+  top: 70%;
+  text-align: center;
+  letter-spacing: .06em;
+  line-height: 1.3;
+  max-width: 200px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #DDD;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-transform: all .3s;
+  -moz-transform: all .3s;
+  -ms-transform: all .3s;
+  -o-transform: all .3s;
+  transform: all .3s;
+  pointer-events: none;
+}
+/* line 105, ../sass/_chart.scss */
+#js-character .char-tooltip:after {
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  content: "";
+  height: 0;
+  margin: 0 0 0 -6px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 6px solid rgba(0, 0, 0, 0.8);
+  line-height: 0;
 }

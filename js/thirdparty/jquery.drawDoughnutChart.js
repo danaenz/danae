@@ -33,6 +33,7 @@
         tipOffsetX: -8,
         tipOffsetY: -45,
         showTip: true,
+        showTipNumber: true,
         showLabel: false,
         ratioFont: 1.5,
         shortInt: false,
@@ -75,6 +76,36 @@
         cutoutRadius = doughnutRadius * (settings.percentageInnerCutout / 100),
         segmentTotal = 0;
 
+      var svgFilter = ''
+//          + '<defs>'
+          + '<filter id="blurFilter" x="-10" y="-10" width="100" height="100">'
+//          + '<feFlood flood-color="orange" result="base" />'
+//          + '<feMorphology result="bigger" in="SourceGraphic" operator="dilate" radius="2"/>'
+//          + '<feColorMatrix result="mask" in="bigger" type="matrix"'
+//          + 'values="0 0 0 0 0'
+//          +    '0 0 0 0 0'
+//          +    '0 0 0 0 0'
+//          +    '0 0 0 1 0" />'
+//          + '<feComposite result="drop" in="base" in2="mask" operator="in" />'
+//          + '<feGaussianBlur result="blur" in="drop" stdDeviation="5" />'
+//          + '<feGaussianBlur in="SourceGraphic" stdDeviation="5" />'
+//          + '<feBlend in="SourceGraphic" in2="blur" mode="normal" />'
+
+          + '<feFlood flood-color="white" result="base" />'
+          + '<feMorphology result="bigger" in="SourceGraphic" operator="dilate" radius="5"/>'
+          + '<feColorMatrix result="mask" in="bigger" type="matrix"'
+          + 'values="0 0 0 0 0 '
+          +        '0 0 0 0 0 '
+          +        '0 0 0 0 0 '
+          +        '0 0 0 1 0" />'
+          + '<feComposite result="drop" in="base" in2="mask" operator="in" />'
+          + '<feGaussianBlur result="blur" in="drop" stdDeviation="5" />'
+          + '<feBlend in="SourceGraphic" in2="blur" mode="normal" />'
+          + '</filter>';
+//          + '</defs>';
+
+      $svg.html(svgFilter);
+
     //Draw base doughnut
     var baseDoughnutRadius = doughnutRadius + settings.baseOffset,
         baseCutoutRadius = cutoutRadius - settings.baseOffset;
@@ -114,16 +145,26 @@
       segmentTotal += data[i].value;
       $paths[i] = $(document.createElementNS('http://www.w3.org/2000/svg', 'path'))
         .attr({
-          "stroke-width": settings.segmentStrokeWidth,
-          "stroke": settings.segmentStrokeColor,
-          "fill": data[i].color,
-          "data-order": i
-        })
+              "stroke-width": settings.segmentStrokeWidth,
+              "stroke": settings.segmentStrokeColor,
+              "fill": data[i].color,
+              "data-order": i,
+              "data-active": data[i].active
+          })
         .appendTo($pathGroup)
         .on("mouseenter", pathMouseEnter)
         .on("mouseleave", pathMouseLeave)
         .on("mousemove", pathMouseMove)
 		.on("click", pathClick);
+
+        if (data[i].active) {
+//            $paths[i].attr('style','filter: url(#blurFilter);');
+//            $paths[i].addClass('svg-path-active');
+//            $paths[i].attr('stroke','rgba(248,246,205)');
+//            $paths[i].attr('stroke-width',2);
+//            $paths[i].attr('stroke-opacity',.8);
+//            $paths[i].attr('fill-opacity',.8);
+        }
     }
 
     //Animation start
@@ -158,8 +199,14 @@
     function pathMouseEnter(e) {
       var order = $(this).data().order;
       if (settings.showTip) {
-        $tip.text(data[order].title + ": " + data[order].value)
-            .fadeIn(200);
+          if (settings.showTipNumber) {
+              $tip.text(data[order].title + ": " + data[order].value)
+                  .fadeIn(200);
+          } else {
+              $tip.text(data[order].title)
+                  .fadeIn(200);
+          }
+
       }
       if(settings.showLabel) {
 		  $summaryTitle.text(data[order].title).css('font-size', getScaleFontSize( $summaryTitle, data[order].title));
@@ -179,10 +226,10 @@
     }
     function pathMouseMove(e) {
       if (settings.showTip) {
-        $tip.css({
-          top: e.pageY + settings.tipOffsetY,
-          left: e.pageX - $tip.width() / 2 + settings.tipOffsetX
-        });
+//        $tip.css({
+//          top: e.pageY + settings.tipOffsetY,
+//          left: e.pageX - $tip.width() / 2 + settings.tipOffsetX
+//        });
       }
     }
 	function pathClick(e){
