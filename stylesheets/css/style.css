@@ -209,7 +209,7 @@ html, body {
   height: 180px;
   background-position: 0 0;
   background-size: 100%;
-  top: 45%;
+  top: 50%;
   left: 50%;
   position: absolute;
   margin: -84px 0 0 -84px;
@@ -232,7 +232,7 @@ html, body {
   position: absolute;
   width: 250px;
   height: 250px;
-  top: 45%;
+  top: 50%;
   left: 50%;
   margin: -125px 0 0 -125px;
   cursor: pointer;
@@ -242,7 +242,7 @@ html, body {
 .donut-tooltip {
   position: absolute;
   width: 100%;
-  top: 70%;
+  top: 75%;
   color: #5b5b5b;
   font-family: "georgia", "palatino linotype", "serif";
   font-style: italic;
