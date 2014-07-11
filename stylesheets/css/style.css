@@ -1,4 +1,4 @@
-/* line 17, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -236,9 +236,10 @@ html, body {
   left: 50%;
   margin: -125px 0 0 -125px;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 11, ../sass/_chart.scss */
+/* line 12, ../sass/_chart.scss */
 .donut-tooltip {
   position: absolute;
   width: 100%;
@@ -259,7 +260,7 @@ html, body {
   pointer-events: none;
 }
 
-/* line 32, ../sass/_chart.scss */
+/* line 33, ../sass/_chart.scss */
 .donut-summary {
   position: absolute;
   top: 50%;
@@ -270,7 +271,7 @@ html, body {
   cursor: default;
 }
 
-/* line 42, ../sass/_chart.scss */
+/* line 43, ../sass/_chart.scss */
 .donut-summary-title {
   display: none;
   position: absolute;
@@ -281,7 +282,7 @@ html, body {
   letter-spacing: .06em;
 }
 
-/* line 52, ../sass/_chart.scss */
+/* line 53, ../sass/_chart.scss */
 .donut-summary-number {
   display: none;
   position: absolute;
@@ -291,7 +292,7 @@ html, body {
   font-size: 55px;
 }
 
-/* line 60, ../sass/_chart.scss */
+/* line 61, ../sass/_chart.scss */
 g path {
   opacity: 1;
   transition: opacity .2s ease-out;
@@ -300,40 +301,40 @@ g path {
   -o-transition: opacity .2s ease-out;
 }
 
-/* line 67, ../sass/_chart.scss */
+/* line 68, ../sass/_chart.scss */
 g path:hover {
   opacity: .65;
 }
 
-/* line 71, ../sass/_chart.scss */
+/* line 72, ../sass/_chart.scss */
 g path[data-active="true"] {
   -webkit-animation: pulsate 2s ease-out;
   -webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes pulsate {
-  /* line 77, ../sass/_chart.scss */
+  /* line 78, ../sass/_chart.scss */
   0% {
     opacity: 0.3;
   }
 
-  /* line 78, ../sass/_chart.scss */
+  /* line 79, ../sass/_chart.scss */
   30% {
     opacity: 1.0;
   }
 
-  /* line 79, ../sass/_chart.scss */
+  /* line 80, ../sass/_chart.scss */
   70% {
     opacity: 1.0;
   }
 
-  /* line 80, ../sass/_chart.scss */
+  /* line 81, ../sass/_chart.scss */
   100% {
     opacity: 0.3;
   }
 }
 
-/* line 83, ../sass/_chart.scss */
+/* line 84, ../sass/_chart.scss */
 #js-character .char-tooltip {
   display: none;
   position: absolute;
@@ -356,7 +357,7 @@ g path[data-active="true"] {
   transform: all .3s;
   pointer-events: none;
 }
-/* line 105, ../sass/_chart.scss */
+/* line 106, ../sass/_chart.scss */
 #js-character .char-tooltip:after {
   position: absolute;
   left: 50%;
