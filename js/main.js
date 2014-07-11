@@ -87,12 +87,24 @@
             });
 
             $('.js-show-box').on('click', function(e){
+
+                var $link = $(this);
+
                 // hide the other boxes if any
                 $('hidden-box').fadeOut(100);
 
                 // Get the targeted box
                 var dest = $(this).attr('href');
-                $(dest).stop(true, true).fadeToggle(200);
+
+                $(dest).stop(true, true).fadeToggle(200, function(){
+                    // Change the icon to a cross if the dest is visible
+                    if ($(this).is(':visible')) {
+                        $link.find('.nav-sprite').addClass('sprite-exit');
+                    } else {
+                        $link.find('.nav-sprite').removeClass('sprite-exit');
+                    }
+                });
+
             });
 
             function compare(a,b) {

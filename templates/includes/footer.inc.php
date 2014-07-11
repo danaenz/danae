@@ -1,7 +1,7 @@
 <footer class="sticky">
     <nav class="footer-nav">
         <ul>
-            <li><a class="js-show-box" href="#show-info"><i class="sprite-info"></i></a></li>
+            <li><a class="js-show-box" href="#show-info"><i class="nav-sprite sprite-info"></i></a></li>
         </ul>
     </nav>
 </footer>

@@ -250,14 +250,35 @@ i.sprite-info {
   display: inline-block;
   height: 16px;
   width: 8px;
-  background-image: url('/images/sprites-s9217d9bd19.png');
-  background-position: 0 -1542px;
+  background-image: url('/images/sprites-sdb79178859.png');
+  background-position: 0 -1556px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-info {
-    background-image: url('/images/sprites-retina-se5cb6a0eff.png');
+    background-image: url('/images/sprites-retina-s92dbf8ec85.png');
+    background-position: 0 -785px;
+    -webkit-background-size: 241px auto;
+    -moz-background-size: 241px auto;
+    -o-background-size: 241px auto;
+    background-size: 241px auto;
+  }
+}
+
+/* line 32, ../sass/_sprites.scss */
+i.sprite-exit {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-image: url('/images/sprites-sdb79178859.png');
+  background-position: 0 -1542px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 39, ../sass/functions/_sprite-generator.scss */
+  i.sprite-exit {
+    background-image: url('/images/sprites-retina-s92dbf8ec85.png');
     background-position: 0 -771px;
     -webkit-background-size: 241px auto;
     -moz-background-size: 241px auto;
@@ -433,8 +454,12 @@ footer a i {
   left: 50%;
   margin: -8px 0 0 -6px;
 }
+/* line 25, ../sass/_footer.scss */
+footer a i.sprite-exit {
+  margin: -7px 0 0 -8px;
+}
 
-/* line 27, ../sass/_footer.scss */
+/* line 31, ../sass/_footer.scss */
 .hidden-box {
   display: none;
   position: absolute;
@@ -444,7 +469,7 @@ footer a i {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
 }
-/* line 36, ../sass/_footer.scss */
+/* line 40, ../sass/_footer.scss */
 .hidden-box p {
   font-size: 1.2em;
   margin-bottom: 20px;

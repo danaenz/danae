@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe2e0fb2-9d2b-40d1-8770-0d9a0b8183a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites-retina/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites-retina-se5cb6a0eff.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites-s9217d9bd19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites-retina-s92dbf8ec85.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites-sdb79178859.png" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\danae\images\sprites-retina-se5cb6a0eff.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\danae\images\sprites-s9217d9bd19.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/sass/_footer.scss" afterPath="$PROJECT_DIR$/stylesheets/sass/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" afterPath="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom/custom.js" afterPath="$PROJECT_DIR$/js/custom/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/footer.inc.php" afterPath="$PROJECT_DIR$/templates/includes/footer.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.min.js" afterPath="$PROJECT_DIR$/js/main.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/css/style.css" afterPath="$PROJECT_DIR$/stylesheets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="danae.iws" />
@@ -61,7 +68,7 @@
           <file leaf-file-name="custom.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/custom/custom.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="84" column="31" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.50980395" vertical-offset="986" max-vertical-offset="2023">
+                <state line="84" column="31" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.43137255" vertical-offset="1054" max-vertical-offset="2227">
                   <folding />
                 </state>
               </provider>
@@ -105,15 +112,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_footer.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stylesheets/sass/_footer.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="16" selection-start="536" selection-end="536" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="765">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="_typography.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/stylesheets/sass/_typography.scss">
               <provider selected="true" editor-type-id="text-editor">
@@ -127,10 +125,28 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="footer.inc.php" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="footer.inc.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/includes/footer.inc.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="29" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38857144" vertical-offset="0" max-vertical-offset="875">
+                <state line="16" column="8" selection-start="704" selection-end="704" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="561">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_sprites.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stylesheets/sass/_sprites.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="31" column="1" selection-start="967" selection-end="983" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="680">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_footer.scss" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/stylesheets/sass/_footer.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="30" column="13" selection-start="545" selection-end="545" vertical-scroll-proportion="0.58285713" vertical-offset="0" max-vertical-offset="875">
                   <folding />
                 </state>
               </provider>
@@ -178,14 +194,14 @@
         <option value="$PROJECT_DIR$/js/thirdparty/jquery.drawDoughnutChart.js" />
         <option value="$PROJECT_DIR$/templates/page.php" />
         <option value="$PROJECT_DIR$/stylesheets/sass/_chart.scss" />
-        <option value="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" />
         <option value="$PROJECT_DIR$/stylesheets/sass/style.scss" />
         <option value="$PROJECT_DIR$/stylesheets/sass/_content.scss" />
         <option value="$PROJECT_DIR$/stylesheets/sass/_typography.scss" />
         <option value="$PROJECT_DIR$/stylesheets/sass/_variables.scss" />
-        <option value="$PROJECT_DIR$/stylesheets/sass/_footer.scss" />
-        <option value="$PROJECT_DIR$/js/custom/custom.js" />
         <option value="$PROJECT_DIR$/templates/includes/footer.inc.php" />
+        <option value="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" />
+        <option value="$PROJECT_DIR$/js/custom/custom.js" />
+        <option value="$PROJECT_DIR$/stylesheets/sass/_footer.scss" />
       </list>
     </option>
   </component>
@@ -616,7 +632,11 @@
       <created>1405085249608</created>
       <updated>1405085249608</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="And sprites too">
+      <created>1405085413925</created>
+      <updated>1405085413925</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -668,7 +688,8 @@
     <MESSAGE value="Just wanna see if this works" />
     <MESSAGE value="would help to commit the css too" />
     <MESSAGE value="A lot of new things" />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of new things" />
+    <MESSAGE value="And sprites too" />
+    <option name="LAST_COMMIT_MESSAGE" value="And sprites too" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,13 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/sass/_sprites.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="963" selection-end="963" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/sass/_chart.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="48" selection-start="1740" selection-end="1740" vertical-scroll-proportion="-47.73077" vertical-offset="0" max-vertical-offset="2091">
@@ -949,23 +963,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/sass/_footer.scss">
+    <entry file="file://$PROJECT_DIR$/templates/includes/footer.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="536" selection-end="536" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="765">
+        <state line="16" column="8" selection-start="704" selection-end="704" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/footer.inc.php">
+    <entry file="file://$PROJECT_DIR$/stylesheets/sass/_sprites.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38857144" vertical-offset="0" max-vertical-offset="875">
+        <state line="31" column="1" selection-start="967" selection-end="983" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/sass/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="13" selection-start="545" selection-end="545" vertical-scroll-proportion="0.58285713" vertical-offset="0" max-vertical-offset="875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="31" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.50980395" vertical-offset="986" max-vertical-offset="2023">
+        <state line="84" column="31" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.43137255" vertical-offset="1054" max-vertical-offset="2227">
           <folding />
         </state>
       </provider>

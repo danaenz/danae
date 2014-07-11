@@ -28,3 +28,8 @@ i.sprite-info {
     display:inline-block;
     @include retina-sprite(info);
 }
+
+i.sprite-exit {
+    display:inline-block;
+    @include retina-sprite(exit);
+}
