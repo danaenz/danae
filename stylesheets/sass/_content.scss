@@ -26,15 +26,13 @@ html, body {
 
 //====>>	Content
 
-
-//.codeivate {
-//    position   : absolute;
-//    max-width  : 481px;
-//    max-height : 514px;
-//    top        : 50%;
-//    left       : 50%;
-//    margin     : -257px 0 0 -240px;
-//}
+.codeivate {
+    position : relative;
+    width    : 250px;
+    top      : 50%;
+    left     : 50%;
+    margin   : 30px 0 0 -125px;
+}
 
 
 // This is a sticky footer if you would like to use it!
@@ -51,15 +49,15 @@ html, body {
     min-height    : 100%;
     height        : auto !important;
     height        : 100%;
-    margin-bottom : -140px;
+    margin-bottom : -40px;
 }
 
 .push {
-    height : 140px;
+    height : 40px;
 }
 
 .sticky {
-    height   : 100px;
+    height   : 40px;
     clear    : both;
     position : relative;
 }

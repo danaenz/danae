@@ -12,11 +12,10 @@
     </header>
 
 <!--    <div id="js-character" class="sprite-character"></div>-->
-    <div id="js-character" class="sprite-character"><div class="char-tooltip"></div></div>
-
-    <section class="codeivate"></section>
-
-    <div id="doughnutChart" class="chart"></div>
+    <section class="codeivate">
+        <div id="js-character" class="sprite-character"><div class="char-tooltip"></div></div>
+        <div id="doughnutChart" class="chart"></div>
+    </section>
 
     <div class="push"></div>
 </article>

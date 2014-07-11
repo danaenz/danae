@@ -44,6 +44,14 @@ h2 {
     font-family: $serif;
 }
 
+h3 {
+    font-family: $sans-serif;
+    text-align: center;
+    border-bottom: 1px solid $text;
+    width: 80%;
+    margin: 0 10% 8% 10%;
+}
+
 p {
     font-family: $serif;
     font-style: italic;
@@ -51,7 +59,7 @@ p {
 
 //====>> LINKS
 
-.content {
+.content, .hidden-box {
     a {
         color: $link;
         text-decoration: none;

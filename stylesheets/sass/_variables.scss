@@ -11,7 +11,16 @@ $chart-red: #C02942;
 $chart-purple: #542437;
 $chart-blue: #53777A;
 
+$footer-bg: #73626E;
+
 //====>> FONTS
 
 $sans-serif : 'pompiere', 'verdana', 'arial';
 $serif : 'georgia', 'palatino linotype', 'serif';
+
+//====>> LAYERS
+
+$lvl-bg: 1;
+$lvl-body: 2;
+$lvl-nav: 3;
+$lvl-lightbox: 4;

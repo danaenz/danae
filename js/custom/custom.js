@@ -27,7 +27,7 @@
                 dataType: 'jsonp'
             }).done(function(data) {
 
-                console.log(data);
+//                console.log(data);
 
                 var programmingNow = data.programming_now;
                 var streakingNow = data.streaking_now;
@@ -84,6 +84,15 @@
 
                 $char.fadeIn();
 
+            });
+
+            $('.js-show-box').on('click', function(e){
+                // hide the other boxes if any
+                $('hidden-box').fadeOut(100);
+
+                // Get the targeted box
+                var dest = $(this).attr('href');
+                $(dest).stop(true, true).fadeToggle(200);
             });
 
             function compare(a,b) {
