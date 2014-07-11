@@ -456,10 +456,12 @@ footer a i {
 }
 /* line 25, ../sass/_footer.scss */
 footer a i.sprite-exit {
+  width: 14px;
+  height: 14px;
   margin: -7px 0 0 -8px;
 }
 
-/* line 31, ../sass/_footer.scss */
+/* line 33, ../sass/_footer.scss */
 .hidden-box {
   display: none;
   position: absolute;
@@ -469,7 +471,7 @@ footer a i.sprite-exit {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
 }
-/* line 40, ../sass/_footer.scss */
+/* line 42, ../sass/_footer.scss */
 .hidden-box p {
   font-size: 1.2em;
   margin-bottom: 20px;
