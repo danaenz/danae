@@ -122,7 +122,7 @@
 
     //Set up tooltip
     if (settings.showTip) {
-      var $tip = $('<div class="' + settings.tipClass + '" />').appendTo('body').hide(),
+      var $tip = $('<div class="' + settings.tipClass + '" />').appendTo('.codeivate').hide(),
           tipW = $tip.width(),
           tipH = $tip.height();
     }

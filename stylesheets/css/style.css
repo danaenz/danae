@@ -344,9 +344,7 @@ i.sprite-linkedin {
 
 /* line 12, ../sass/_chart.scss */
 .donut-tooltip {
-  position: absolute;
   width: 100%;
-  top: 75%;
   color: #5b5b5b;
   font-family: "georgia", "palatino linotype", "serif";
   font-style: italic;
