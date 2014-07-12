@@ -81,7 +81,6 @@
                         showTipNumber: false
                     }
                 );
-
                 $char.fadeIn();
             });
 
@@ -102,9 +101,7 @@
                 // Get the targeted box
                 var dest = $(this).attr('href');
 
-                $(dest).stop(true, true).fadeToggle(200, function(){
-
-                });
+                $(dest).stop(true, true).fadeToggle(200);
 
             });
 
@@ -120,6 +117,7 @@
                 for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
                 return o;
             }
+
         }
     );
 })(jQuery);

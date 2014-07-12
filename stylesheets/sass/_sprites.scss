@@ -36,3 +36,13 @@ i.sprite-exit {
     display:inline-block;
     @include retina-sprite(exit);
 }
+
+i.sprite-pinterest {
+    display:inline-block;
+    @include retina-sprite(pinterest);
+}
+
+i.sprite-linkedin {
+    display:inline-block;
+    @include retina-sprite(linkedin);
+}

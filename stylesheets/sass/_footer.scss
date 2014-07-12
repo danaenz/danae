@@ -44,3 +44,11 @@ footer {
         margin-bottom: 20px;
     }
 }
+
+nav.footer-nav {
+    @include clearfix;
+
+    li {
+        float: left;
+    }
+}
