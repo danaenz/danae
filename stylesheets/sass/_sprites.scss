@@ -7,7 +7,7 @@
     height              : 180px;
     background-position : 0 0;
     background-size     : 100%;
-    top                 : 50%;
+    //    top                 : 50%;
     left                : 50%;
     position            : absolute;
     margin              : 42px 0 0 -84px;
@@ -28,21 +28,31 @@
 }
 
 i.sprite-info {
-    display:inline-block;
+    display : inline-block;
     @include retina-sprite(info);
 }
 
 i.sprite-exit {
-    display:inline-block;
+    display : inline-block;
     @include retina-sprite(exit);
 }
 
 i.sprite-pinterest {
-    display:inline-block;
+    display : inline-block;
     @include retina-sprite(pinterest);
 }
 
 i.sprite-linkedin {
-    display:inline-block;
+    display : inline-block;
     @include retina-sprite(linkedin);
+}
+
+i.sprite-da {
+    display : inline-block;
+    @include retina-sprite(da);
+}
+
+i.sprite-blogger {
+    display : inline-block;
+    @include retina-sprite(blogger);
 }

@@ -4,10 +4,14 @@ footer {
     z-index: $lvl-nav;
 
     a {
-        display: block;
+        display: inline-block;
         width: 40px;
         height: 40px;
         position : relative;
+
+        &.social {
+            float: right;
+        }
 
         &:hover {
             background: lighten($footer-bg, 10);
@@ -19,7 +23,11 @@ footer {
             position: absolute;
             top: 50%;
             left: 50%;
-            margin: -8px 0 0 -6px;
+            margin: -8px 0 0 -8px;
+        }
+
+        i.sprite-info {
+            margin: -8px 0 0 -5px;
         }
 
         i.sprite-exit {
@@ -50,5 +58,9 @@ nav.footer-nav {
 
     li {
         float: left;
+    }
+
+    li.social {
+        float: right;
     }
 }

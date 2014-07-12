@@ -194,12 +194,13 @@ html, body {
 .codeivate {
   position: relative;
   width: 250px;
+  height: 280px;
   top: 50%;
   left: 50%;
   margin: 30px 0 0 -125px;
 }
 
-/* line 47, ../sass/_content.scss */
+/* line 48, ../sass/_content.scss */
 .content {
   clear: both;
   min-height: 100%;
@@ -208,12 +209,12 @@ html, body {
   margin-bottom: -40px;
 }
 
-/* line 55, ../sass/_content.scss */
+/* line 56, ../sass/_content.scss */
 .push {
   height: 40px;
 }
 
-/* line 59, ../sass/_content.scss */
+/* line 60, ../sass/_content.scss */
 .sticky {
   height: 40px;
   clear: both;
@@ -226,7 +227,6 @@ html, body {
   height: 180px;
   background-position: 0 0;
   background-size: 100%;
-  top: 50%;
   left: 50%;
   position: absolute;
   margin: 42px 0 0 -84px;
@@ -255,14 +255,14 @@ i.sprite-info {
   height: 16px;
   width: 8px;
   background-image: url('/images/sprite-sprites.png');
-  background-position: 0 -46px;
+  background-position: 0 -78px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-info {
     background-image: url('/images/sprite-sprites-retina.png');
-    background-position: 0 -46px;
+    background-position: 0 -78px;
     -webkit-background-size: 16px auto;
     -moz-background-size: 16px auto;
     -o-background-size: 16px auto;
@@ -276,14 +276,14 @@ i.sprite-exit {
   height: 14px;
   width: 14px;
   background-image: url('/images/sprite-sprites.png');
-  background-position: 0 -32px;
+  background-position: 0 -64px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-exit {
     background-image: url('/images/sprite-sprites-retina.png');
-    background-position: 0 -32px;
+    background-position: 0 -64px;
     -webkit-background-size: 16px auto;
     -moz-background-size: 16px auto;
     -o-background-size: 16px auto;
@@ -325,6 +325,48 @@ i.sprite-linkedin {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-linkedin {
     background-image: url('/images/sprite-sprites-retina.png');
+    background-position: 0 -48px;
+    -webkit-background-size: 16px auto;
+    -moz-background-size: 16px auto;
+    -o-background-size: 16px auto;
+    background-size: 16px auto;
+  }
+}
+
+/* line 50, ../sass/_sprites.scss */
+i.sprite-da {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-image: url('/images/sprite-sprites.png');
+  background-position: 0 -48px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 39, ../sass/functions/_sprite-generator.scss */
+  i.sprite-da {
+    background-image: url('/images/sprite-sprites-retina.png');
+    background-position: 0 -32px;
+    -webkit-background-size: 16px auto;
+    -moz-background-size: 16px auto;
+    -o-background-size: 16px auto;
+    background-size: 16px auto;
+  }
+}
+
+/* line 55, ../sass/_sprites.scss */
+i.sprite-blogger {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-image: url('/images/sprite-sprites.png');
+  background-position: 0 -32px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 39, ../sass/functions/_sprite-generator.scss */
+  i.sprite-blogger {
+    background-image: url('/images/sprite-sprites-retina.png');
     background-position: 0 -16px;
     -webkit-background-size: 16px auto;
     -moz-background-size: 16px auto;
@@ -335,16 +377,26 @@ i.sprite-linkedin {
 
 /* line 1, ../sass/_chart.scss */
 .chart {
-  position: absolute;
+  position: relative;
   width: 250px;
   height: 250px;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+/* line 12, ../sass/_mixins.scss */
+.chart:before, .chart:after {
+  content: "";
+  display: table;
+}
+/* line 16, ../sass/_mixins.scss */
+.chart:after {
+  clear: both;
+}
 
-/* line 12, ../sass/_chart.scss */
+/* line 13, ../sass/_chart.scss */
 .donut-tooltip {
   width: 100%;
+  margin-top: 20px;
   color: #5b5b5b;
   font-family: "georgia", "palatino linotype", "serif";
   font-style: italic;
@@ -393,7 +445,7 @@ i.sprite-linkedin {
   font-size: 55px;
 }
 
-/* line 61, ../sass/_chart.scss */
+/* line 62, ../sass/_chart.scss */
 g path {
   opacity: 1;
   transition: opacity .2s ease-out;
@@ -402,40 +454,40 @@ g path {
   -o-transition: opacity .2s ease-out;
 }
 
-/* line 68, ../sass/_chart.scss */
+/* line 70, ../sass/_chart.scss */
 g path:hover {
   opacity: .65;
 }
 
-/* line 72, ../sass/_chart.scss */
+/* line 74, ../sass/_chart.scss */
 g path[data-active="true"] {
   -webkit-animation: pulsate 2s ease-out;
   -webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes pulsate {
-  /* line 78, ../sass/_chart.scss */
+  /* line 80, ../sass/_chart.scss */
   0% {
     opacity: 0.3;
   }
 
-  /* line 79, ../sass/_chart.scss */
+  /* line 83, ../sass/_chart.scss */
   30% {
     opacity: 1.0;
   }
 
-  /* line 80, ../sass/_chart.scss */
+  /* line 86, ../sass/_chart.scss */
   70% {
     opacity: 1.0;
   }
 
-  /* line 81, ../sass/_chart.scss */
+  /* line 89, ../sass/_chart.scss */
   100% {
     opacity: 0.3;
   }
 }
 
-/* line 84, ../sass/_chart.scss */
+/* line 94, ../sass/_chart.scss */
 #js-character .char-tooltip {
   display: none;
   position: absolute;
@@ -458,7 +510,7 @@ g path[data-active="true"] {
   transform: all .3s;
   pointer-events: none;
 }
-/* line 106, ../sass/_chart.scss */
+/* line 116, ../sass/_chart.scss */
 #js-character .char-tooltip:after {
   position: absolute;
   left: 50%;
@@ -480,32 +532,40 @@ footer {
 }
 /* line 6, ../sass/_footer.scss */
 footer a {
-  display: block;
+  display: inline-block;
   width: 40px;
   height: 40px;
   position: relative;
 }
 /* line 12, ../sass/_footer.scss */
+footer a.social {
+  float: right;
+}
+/* line 16, ../sass/_footer.scss */
 footer a:hover {
   background: #8e7a88;
 }
-/* line 16, ../sass/_footer.scss */
+/* line 20, ../sass/_footer.scss */
 footer a i {
   width: 16px;
   height: 16px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -8px 0 0 -6px;
+  margin: -8px 0 0 -8px;
 }
-/* line 25, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
+footer a i.sprite-info {
+  margin: -8px 0 0 -5px;
+}
+/* line 33, ../sass/_footer.scss */
 footer a i.sprite-exit {
   width: 14px;
   height: 14px;
   margin: -7px 0 0 -8px;
 }
 
-/* line 33, ../sass/_footer.scss */
+/* line 41, ../sass/_footer.scss */
 .hidden-box {
   display: none;
   position: absolute;
@@ -515,7 +575,7 @@ footer a i.sprite-exit {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
 }
-/* line 42, ../sass/_footer.scss */
+/* line 50, ../sass/_footer.scss */
 .hidden-box p {
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -530,7 +590,11 @@ nav.footer-nav:before, nav.footer-nav:after {
 nav.footer-nav:after {
   clear: both;
 }
-/* line 51, ../sass/_footer.scss */
+/* line 59, ../sass/_footer.scss */
 nav.footer-nav li {
   float: left;
+}
+/* line 63, ../sass/_footer.scss */
+nav.footer-nav li.social {
+  float: right;
 }

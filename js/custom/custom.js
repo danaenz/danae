@@ -88,13 +88,6 @@
 
                 var $link = $(this);
 
-                // Change the icon to a cross if the dest is visible
-                if ($(this).is(':visible')) {
-                    $link.find('.nav-sprite').removeClass('sprite-exit');
-                } else {
-                    $link.find('.nav-sprite').addClass('sprite-exit');
-                }
-
                 // hide the other boxes if any
                 $('hidden-box').fadeOut(100);
 
@@ -102,6 +95,13 @@
                 var dest = $(this).attr('href');
 
                 $(dest).stop(true, true).fadeToggle(200);
+
+                // Change the icon to a cross if the dest is visible
+                if ($link.is(':visible')) {
+                    $link.find('.nav-sprite').removeClass('sprite-exit');
+                } else {
+                    $link.find('.nav-sprite').addClass('sprite-exit');
+                }
 
             });
 
