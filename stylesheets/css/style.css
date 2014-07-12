@@ -222,7 +222,6 @@ html, body {
 
 /* line 5, ../sass/_sprites.scss */
 .sprite-character {
-  background-image: url("../../images/sprites/sprite.png");
   width: 168px;
   height: 180px;
   background-position: 0 0;
@@ -235,55 +234,60 @@ html, body {
   display: none;
 }
 
-/* line 19, ../sass/_sprites.scss */
+/* line 18, ../sass/_sprites.scss */
+.sprite-character-normal {
+  background-image: url("../../images/non-sprite/char.png");
+}
+
+/* line 22, ../sass/_sprites.scss */
 .sprite-character-flow {
-  background-image: url("../../images/sprites/sprite-flow.png");
+  background-image: url("../../images/non-sprite/char-flow.png");
 }
 
-/* line 23, ../sass/_sprites.scss */
+/* line 26, ../sass/_sprites.scss */
 .sprite-character-programming {
-  background-image: url("../../images/sprites/sprite-programming.png");
+  background-image: url("../../images/non-sprite/char-programming.png");
 }
 
-/* line 27, ../sass/_sprites.scss */
+/* line 30, ../sass/_sprites.scss */
 i.sprite-info {
   display: inline-block;
   height: 16px;
   width: 8px;
-  background-image: url('/images/sprites-sdb79178859.png');
-  background-position: 0 -1556px;
+  background-image: url('/images/sprites-s21751f8167.png');
+  background-position: 0 -14px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-info {
-    background-image: url('/images/sprites-retina-s92dbf8ec85.png');
-    background-position: 0 -785px;
-    -webkit-background-size: 241px auto;
-    -moz-background-size: 241px auto;
-    -o-background-size: 241px auto;
-    background-size: 241px auto;
+    background-image: url('/images/sprites-retina-s710069778d.png');
+    background-position: 0 -14px;
+    -webkit-background-size: 14px auto;
+    -moz-background-size: 14px auto;
+    -o-background-size: 14px auto;
+    background-size: 14px auto;
   }
 }
 
-/* line 32, ../sass/_sprites.scss */
+/* line 35, ../sass/_sprites.scss */
 i.sprite-exit {
   display: inline-block;
   height: 14px;
   width: 14px;
-  background-image: url('/images/sprites-sdb79178859.png');
-  background-position: 0 -1542px;
+  background-image: url('/images/sprites-s21751f8167.png');
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-exit {
-    background-image: url('/images/sprites-retina-s92dbf8ec85.png');
-    background-position: 0 -771px;
-    -webkit-background-size: 241px auto;
-    -moz-background-size: 241px auto;
-    -o-background-size: 241px auto;
-    background-size: 241px auto;
+    background-image: url('/images/sprites-retina-s710069778d.png');
+    background-position: 0 0;
+    -webkit-background-size: 14px auto;
+    -moz-background-size: 14px auto;
+    -o-background-size: 14px auto;
+    background-size: 14px auto;
   }
 }
 

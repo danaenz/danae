@@ -3,7 +3,6 @@
 //==========================================================================================
 
 .sprite-character {
-    background-image    : url('../../images/sprites/sprite.png');
     width               : 168px;
     height              : 180px;
     background-position : 0 0;
@@ -16,12 +15,16 @@
     display             : none;
 }
 
+.sprite-character-normal {
+    background-image : url('../../images/non-sprite/char.png');
+}
+
 .sprite-character-flow {
-    background-image : url('../../images/sprites/sprite-flow.png');
+    background-image : url('../../images/non-sprite/char-flow.png');
 }
 
 .sprite-character-programming {
-    background-image : url('../../images/sprites/sprite-programming.png');
+    background-image : url('../../images/non-sprite/char-programming.png');
 }
 
 i.sprite-info {

@@ -39,10 +39,10 @@
                     if (currentLanguage) {
                         $char.find('.char-tooltip').html('Programming now in ' + currentLanguage);
                     }
-                }
-
-                if (streakingNow) {
+                } else if (streakingNow) {
                     $char.addClass('sprite-character-flow');
+                } else {
+                    $char.addClass('sprite-character-normal');
                 }
 
                 var languages = data.languages;
@@ -83,12 +83,18 @@
                 );
 
                 $char.fadeIn();
-
             });
 
             $('.js-show-box').on('click', function(e){
 
                 var $link = $(this);
+
+                // Change the icon to a cross if the dest is visible
+                if ($(this).is(':visible')) {
+                    $link.find('.nav-sprite').removeClass('sprite-exit');
+                } else {
+                    $link.find('.nav-sprite').addClass('sprite-exit');
+                }
 
                 // hide the other boxes if any
                 $('hidden-box').fadeOut(100);
@@ -97,12 +103,7 @@
                 var dest = $(this).attr('href');
 
                 $(dest).stop(true, true).fadeToggle(200, function(){
-                    // Change the icon to a cross if the dest is visible
-                    if ($(this).is(':visible')) {
-                        $link.find('.nav-sprite').addClass('sprite-exit');
-                    } else {
-                        $link.find('.nav-sprite').removeClass('sprite-exit');
-                    }
+
                 });
 
             });
