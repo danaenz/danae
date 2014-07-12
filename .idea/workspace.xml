@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe2e0fb2-9d2b-40d1-8770-0d9a0b8183a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sprite-sprites-retina.png" afterPath="$PROJECT_DIR$/images/sprite-sprites-retina.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sprite-sprites.png" afterPath="$PROJECT_DIR$/images/sprite-sprites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/sass/_chart.scss" afterPath="$PROJECT_DIR$/stylesheets/sass/_chart.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/sass/_content.scss" afterPath="$PROJECT_DIR$/stylesheets/sass/_content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/sass/_footer.scss" afterPath="$PROJECT_DIR$/stylesheets/sass/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" afterPath="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites/blogger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites-retina/blogger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites/da.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites-retina/da.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom/custom.js" afterPath="$PROJECT_DIR$/js/custom/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/footer.inc.php" afterPath="$PROJECT_DIR$/templates/includes/footer.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.min.js" afterPath="$PROJECT_DIR$/js/main.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/css/style.css" afterPath="$PROJECT_DIR$/stylesheets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="danae.iws" />
@@ -122,7 +118,7 @@
           <file leaf-file-name="custom.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/custom/custom.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="103" column="17" selection-start="3386" selection-end="3386" vertical-scroll-proportion="0.7433832" vertical-offset="1105" max-vertical-offset="2210">
+                <state line="105" column="30" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.627451" vertical-offset="1241" max-vertical-offset="2346">
                   <folding />
                 </state>
               </provider>
@@ -132,19 +128,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="footer.inc.php" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="footer.inc.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/includes/footer.inc.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.3738426" vertical-offset="0" max-vertical-offset="1156">
+                <state line="2" column="12" selection-start="65" selection-end="65" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="1156">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_sprites.scss" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="_sprites.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/stylesheets/sass/_sprites.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="34" selection-start="1424" selection-end="1424" vertical-scroll-proportion="-31.76923" vertical-offset="126" max-vertical-offset="1071">
+                <state line="13" column="36" selection-start="586" selection-end="586" vertical-scroll-proportion="0.25257143" vertical-offset="0" max-vertical-offset="1071">
                   <folding />
                 </state>
               </provider>
@@ -232,10 +228,10 @@
         <option value="$PROJECT_DIR$/stylesheets/sass/_content.scss" />
         <option value="$PROJECT_DIR$/stylesheets/sass/_chart.scss" />
         <option value="$PROJECT_DIR$/templates/includes/head.inc.php" />
-        <option value="$PROJECT_DIR$/js/custom/custom.js" />
         <option value="$PROJECT_DIR$/stylesheets/sass/_footer.scss" />
-        <option value="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" />
         <option value="$PROJECT_DIR$/templates/includes/footer.inc.php" />
+        <option value="$PROJECT_DIR$/js/custom/custom.js" />
+        <option value="$PROJECT_DIR$/stylesheets/sass/_sprites.scss" />
       </list>
     </option>
   </component>
@@ -686,7 +682,11 @@
       <created>1405134181505</created>
       <updated>1405134181505</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Omg found that bug, silly intellisense not picking it up">
+      <created>1405159170889</created>
+      <updated>1405159170889</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -694,22 +694,22 @@
     <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23035522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39846322" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1517572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39846322" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -743,7 +743,8 @@
     <MESSAGE value="and the footer" />
     <MESSAGE value="gitignore working now" />
     <MESSAGE value="raaah" />
-    <option name="LAST_COMMIT_MESSAGE" value="raaah" />
+    <MESSAGE value="Omg found that bug, silly intellisense not picking it up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Omg found that bug, silly intellisense not picking it up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1021,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="17" selection-start="3386" selection-end="3386" vertical-scroll-proportion="0.7433832" vertical-offset="1105" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/sass/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="16" selection-start="807" selection-end="807" vertical-scroll-proportion="-16.076923" vertical-offset="330" max-vertical-offset="1207">
@@ -1035,16 +1029,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/sass/_sprites.scss">
+    <entry file="file://$PROJECT_DIR$/templates/includes/footer.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="34" selection-start="1424" selection-end="1424" vertical-scroll-proportion="-31.76923" vertical-offset="126" max-vertical-offset="1071">
+        <state line="2" column="12" selection-start="65" selection-end="65" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/footer.inc.php">
+    <entry file="file://$PROJECT_DIR$/js/custom/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="678" selection-end="678" vertical-scroll-proportion="0.3738426" vertical-offset="0" max-vertical-offset="1156">
+        <state line="105" column="30" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.627451" vertical-offset="1241" max-vertical-offset="2346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/sass/_sprites.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="586" selection-end="586" vertical-scroll-proportion="0.25257143" vertical-offset="0" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>

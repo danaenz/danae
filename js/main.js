@@ -27,24 +27,29 @@
                 dataType: 'jsonp'
             }).done(function(data) {
 
-//                console.log(data);
+                console.log(data);
 
                 var programmingNow = data.programming_now;
                 var streakingNow = data.streaking_now;
                 var currentLanguage = data.current_language;
 
+                // Set up the character sprite
                 if (programmingNow) {
-                    $char.addClass('sprite-character-programming');
+
+                    if (streakingNow) {
+                        $char.addClass('sprite-character-flow');
+                    } else {
+                        $char.addClass('sprite-character-programming');
+                    }
 
                     if (currentLanguage) {
                         $char.find('.char-tooltip').html('Programming now in ' + currentLanguage);
                     }
-                } else if (streakingNow) {
-                    $char.addClass('sprite-character-flow');
                 } else {
                     $char.addClass('sprite-character-normal');
                 }
 
+                // Run through the languages and create array
                 var languages = data.languages;
 
                 $.each(languages, function(index, value) {
@@ -65,6 +70,7 @@
 
                 donut.sort(compare);
 
+                // Draw the chart
                 $("#doughnutChart").drawDoughnutChart(
                     donut,
                     {
@@ -81,6 +87,7 @@
                         showTipNumber: false
                     }
                 );
+
                 $char.fadeIn();
             });
 
@@ -94,14 +101,15 @@
                 // Get the targeted box
                 var dest = $(this).attr('href');
 
-                $(dest).stop(true, true).fadeToggle(200);
+                $(dest).stop(true, true).fadeToggle(200, function(){
+                    // Change the icon to a cross if the dest is visible
+                    if ($(dest).is(':visible')) {
+                        $link.find('.nav-sprite').addClass('sprite-exit');
+                    } else {
+                        $link.find('.nav-sprite').removeClass('sprite-exit');
+                    }
+                });
 
-                // Change the icon to a cross if the dest is visible
-                if ($link.is(':visible')) {
-                    $link.find('.nav-sprite').removeClass('sprite-exit');
-                } else {
-                    $link.find('.nav-sprite').addClass('sprite-exit');
-                }
 
             });
 
