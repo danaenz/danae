@@ -30,10 +30,17 @@
                     <i class="sprite-linkedin"></i>
                 </a>
             </li>
+
+            <li class="social">
+                <a class="js-show-box" href="#show-form" title="Contact">
+                    <i class="sprite-mail"></i>
+                </a>
+            </li>
         </ul>
     </nav>
 </footer>
 
+<!-- INFORMATION BOX -->
 <div id="show-info" class="hidden-box">
     <h3>What is this?</h3>
     <p>This page tells you in real time if <a href="http://nz.linkedin.com/in/danaemillerclendon/" target="_blank">I'm</a> coding, and what language I'm coding in.</p>
@@ -44,6 +51,39 @@
         to how long I have spent on each language (relative to each other).
     </p>
     <p>The pulsing segment shows you which language I'm using, <em>right now!</em></p>
+</div>
+
+<!-- FORM BOX -->
+<div id="show-form" class="hidden-box">
+    <h3>Contact me</h3>
+    <p></p>
+
+    <form id="contact-form" name="contact" action="form.php" method="post">
+        <p>
+            <label for="contact-name">Name <i>*</i></label>
+            <input type="text" name="contact_name" id="contact-name" required>
+        </p>
+
+        <p>
+            <label for="contact-email">Email <i>*</i></label>
+            <input type="email" name="contact_email" id="contact-email" required>
+        </p>
+
+        <p>
+            <label for="contact-website">Website</label>
+            <input type="url" name="contact_website" id="contact-website">
+        </p>
+
+        <p>
+            <label for="contact-message">Message <i>*</i></label>
+            <textarea rows="7" name="contact_message" id="contact-message" required></textarea>
+        </p>
+
+        <p>
+            <input type="submit" name="submit_form" value="Send">
+        </p>
+    </form>
+
 </div>
 
 <!-- Main javascript calls -->

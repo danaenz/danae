@@ -255,14 +255,14 @@ i.sprite-info {
   height: 16px;
   width: 8px;
   background-image: url('/images/sprite-sprites.png');
-  background-position: 0 -78px;
+  background-position: 0 -94px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-info {
     background-image: url('/images/sprite-sprites-retina.png');
-    background-position: 0 -78px;
+    background-position: 0 -94px;
     -webkit-background-size: 16px auto;
     -moz-background-size: 16px auto;
     -o-background-size: 16px auto;
@@ -276,14 +276,14 @@ i.sprite-exit {
   height: 14px;
   width: 14px;
   background-image: url('/images/sprite-sprites.png');
-  background-position: 0 -64px;
+  background-position: 0 -80px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-exit {
     background-image: url('/images/sprite-sprites-retina.png');
-    background-position: 0 -64px;
+    background-position: 0 -80px;
     -webkit-background-size: 16px auto;
     -moz-background-size: 16px auto;
     -o-background-size: 16px auto;
@@ -318,14 +318,14 @@ i.sprite-linkedin {
   height: 16px;
   width: 16px;
   background-image: url('/images/sprite-sprites.png');
-  background-position: 0 -16px;
+  background-position: 0 -32px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 39, ../sass/functions/_sprite-generator.scss */
   i.sprite-linkedin {
     background-image: url('/images/sprite-sprites-retina.png');
-    background-position: 0 -48px;
+    background-position: 0 -64px;
     -webkit-background-size: 16px auto;
     -moz-background-size: 16px auto;
     -o-background-size: 16px auto;
@@ -339,7 +339,7 @@ i.sprite-da {
   height: 16px;
   width: 16px;
   background-image: url('/images/sprite-sprites.png');
-  background-position: 0 -48px;
+  background-position: 0 -64px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
@@ -360,7 +360,7 @@ i.sprite-blogger {
   height: 16px;
   width: 16px;
   background-image: url('/images/sprite-sprites.png');
-  background-position: 0 -32px;
+  background-position: 0 -48px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
@@ -368,6 +368,27 @@ i.sprite-blogger {
   i.sprite-blogger {
     background-image: url('/images/sprite-sprites-retina.png');
     background-position: 0 -16px;
+    -webkit-background-size: 16px auto;
+    -moz-background-size: 16px auto;
+    -o-background-size: 16px auto;
+    background-size: 16px auto;
+  }
+}
+
+/* line 60, ../sass/_sprites.scss */
+i.sprite-mail {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-image: url('/images/sprite-sprites.png');
+  background-position: 0 -16px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 39, ../sass/functions/_sprite-generator.scss */
+  i.sprite-mail {
+    background-image: url('/images/sprite-sprites-retina.png');
+    background-position: 0 -48px;
     -webkit-background-size: 16px auto;
     -moz-background-size: 16px auto;
     -o-background-size: 16px auto;
@@ -564,8 +585,12 @@ footer a i.sprite-exit {
   height: 14px;
   margin: -7px 0 0 -8px;
 }
+/* line 39, ../sass/_footer.scss */
+footer a i.sprite-mail {
+  margin: -7px 0 0 -8px;
+}
 
-/* line 41, ../sass/_footer.scss */
+/* line 45, ../sass/_footer.scss */
 .hidden-box {
   display: none;
   position: absolute;
@@ -575,7 +600,7 @@ footer a i.sprite-exit {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
 }
-/* line 50, ../sass/_footer.scss */
+/* line 54, ../sass/_footer.scss */
 .hidden-box p {
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -590,11 +615,57 @@ nav.footer-nav:before, nav.footer-nav:after {
 nav.footer-nav:after {
   clear: both;
 }
-/* line 59, ../sass/_footer.scss */
+/* line 63, ../sass/_footer.scss */
 nav.footer-nav li {
   float: left;
 }
-/* line 63, ../sass/_footer.scss */
+/* line 67, ../sass/_footer.scss */
 nav.footer-nav li.social {
   float: right;
+}
+
+/* line 5, ../sass/_forms.scss */
+form p {
+  position: relative;
+}
+/* line 9, ../sass/_forms.scss */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 13, ../sass/_forms.scss */
+form label i {
+  color: #af4b4b;
+}
+/* line 18, ../sass/_forms.scss */
+form em {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #af4b4b;
+}
+/* line 25, ../sass/_forms.scss */
+form textarea, form input {
+  margin: 0;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #b6b6b6;
+}
+/* line 31, ../sass/_forms.scss */
+form textarea:focus, form input:focus {
+  outline: none;
+}
+/* line 35, ../sass/_forms.scss */
+form textarea.error, form input.error {
+  border: 1px solid #af4b4b;
+  background-color: #f6eaea;
+}
+/* line 41, ../sass/_forms.scss */
+form textarea {
+  font-family: arial, sans-serif;
+}
+/* line 45, ../sass/_forms.scss */
+form input[type="submit"] {
+  width: auto;
+  cursor: pointer;
 }

@@ -56,3 +56,8 @@ i.sprite-blogger {
     display : inline-block;
     @include retina-sprite(blogger);
 }
+
+i.sprite-mail {
+    display : inline-block;
+    @include retina-sprite(mail);
+}

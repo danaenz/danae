@@ -24,6 +24,8 @@
     "fit.js": "latest",
     "fancybox": "latest",
     "console-shim": "latest",
-    "selectivizr": "latest"
+    "selectivizr": "latest",
+    "jquery-form": "latest",
+    "jquery-validate": "latest"
   }
 }

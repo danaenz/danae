@@ -27,7 +27,7 @@
                 dataType: 'jsonp'
             }).done(function(data) {
 
-                console.log(data);
+//                console.log(data);
 
                 var programmingNow = data.programming_now;
                 var streakingNow = data.streaking_now;
@@ -95,19 +95,19 @@
 
                 var $link = $(this);
 
-                // hide the other boxes if any
-                $('hidden-box').fadeOut(100);
-
                 // Get the targeted box
                 var dest = $(this).attr('href');
 
+                // hide the other boxes if any
+                $('.hidden-box').not($(dest)).fadeOut(100);
+
                 $(dest).stop(true, true).fadeToggle(200, function(){
                     // Change the icon to a cross if the dest is visible
-                    if ($(dest).is(':visible')) {
-                        $link.find('.nav-sprite').addClass('sprite-exit');
-                    } else {
-                        $link.find('.nav-sprite').removeClass('sprite-exit');
-                    }
+//                    if ($(dest).is(':visible')) {
+//                        $link.find('.nav-sprite').addClass('sprite-exit');
+//                    } else {
+//                        $link.find('.nav-sprite').removeClass('sprite-exit');
+//                    }
                 });
 
 
