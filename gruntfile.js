@@ -16,7 +16,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: ['js/custom/*.js'],
-                dest: 'js/main.js'
+                dest: 'js/dist/main.js'
             },
             javascript: {
                 src: [
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
                     'bower_components/jquery-validate/dist/jquery.validate.js',
                     'js/thirdparty/jquery.drawDoughnutChart.js'
                 ],
-                dest: 'js/thirdparty.combined.min.js'
+                dest: 'js/dist/thirdparty.combined.min.js'
             },
             IE8: {
                 src: [
@@ -38,11 +38,11 @@ module.exports = function (grunt) {
                     'bower_thirdparty/respond/src/respond.js',
                     'bower_thirdparty/console-shim/console-shim.js'
                 ],
-                dest: 'js/IE8.combined.min.js'
+                dest: 'js/dist/IE8.combined.min.js'
             },
             jquery: {
                 src: ['bower_components/jquery/jquery.min.js'],
-                dest: 'js/jquery.min.js'
+                dest: 'js/dist/jquery.min.js'
             }
         },
         uglify: {
@@ -51,19 +51,19 @@ module.exports = function (grunt) {
             },
             javascript: {
                 files: {
-                    'js/thirdparty.combined.min.js': ['js/thirdparty.combined.min.js'],
-                    'js/main.min.js': ['js/main.min.js'],
-                    'js/selectivizr.min.js': ['bower_components/selectivizr/selectivizr.js']
+                    'js/dist/thirdparty.combined.min.js': ['js/dist/thirdparty.combined.min.js'],
+                    'js/dist/main.min.js': ['js/dist/main.min.js'],
+                    'js/dist/selectivizr.min.js': ['bower_components/selectivizr/selectivizr.js']
 
                 }
             }, IE8: {
                 files: {
-                    'js/IE8.combined.min.js': ['js/IE8.combined.min.js']
+                    'js/dist/IE8.combined.min.js': ['js/dist/IE8.combined.min.js']
                 }
             },
             dist: {
                 files: {
-                    'js/main.min.js': ['<%= concat.dist.dest %>']
+                    'js/dist/main.min.js': ['<%= concat.dist.dest %>']
                 }
             }
         },
