@@ -89,4 +89,5 @@ module.exports = function (grunt) {
 
 // Default task(s).
     grunt.registerTask('default', ['compass', 'concat', 'concat:jquery', 'concat:javascript', 'uglify', 'watch']);
+    grunt.registerTask('live', ['compass', 'concat', 'concat:jquery', 'concat:javascript', 'uglify']);
 };
