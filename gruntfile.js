@@ -52,7 +52,7 @@ module.exports = function (grunt) {
             javascript: {
                 files: {
                     'js/dist/thirdparty.combined.min.js': ['js/dist/thirdparty.combined.min.js'],
-                    'js/dist/main.min.js': ['js/dist/main.min.js'],
+                    'js/dist/main.min.js': ['js/dist/main.js'],
                     'js/dist/selectivizr.min.js': ['bower_components/selectivizr/selectivizr.js']
 
                 }
