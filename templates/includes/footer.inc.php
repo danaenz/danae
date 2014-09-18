@@ -87,9 +87,10 @@
 </div>
 
 <!-- Main javascript calls -->
-<script src="/js/jquery.min.js"></script>
-<script src="/js/thirdparty.combined.min.js"></script>
-<script src="/js/main.min.js"></script>
+<script src="/js/dist/jquery.min.js"></script>
+<script src="/js/dist/thirdparty.combined.min.js"></script>
+<script src="/js/dist/selectivizr.min.js"></script>
+<script src="/js/dist/main.min.js"></script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
