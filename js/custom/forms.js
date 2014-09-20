@@ -2,7 +2,10 @@
     $(document).ready(
         function () {
             $('#contact-form').validate({
-                errorElement: 'em'
+                errorElement: 'em',
+                submitHandler: function(form) {
+                    $(form).ajaxSubmit();
+                }
             });
         }
     );

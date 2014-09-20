@@ -26,6 +26,12 @@
             </li>
 
             <li class="social">
+                <a href="https://github.com/Zomxilla/" target="_blank" title="Github">
+                    <i class="sprite-github"></i>
+                </a>
+            </li>
+
+            <li class="social">
                 <a href="http://nz.linkedin.com/in/danaemillerclendon/" target="_blank" title="LinkedIn">
                     <i class="sprite-linkedin"></i>
                 </a>
