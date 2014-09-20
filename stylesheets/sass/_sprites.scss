@@ -61,3 +61,8 @@ i.sprite-mail {
     display : inline-block;
     @include retina-sprite(mail);
 }
+
+i.sprite-github {
+    display : inline-block;
+    @include retina-sprite(github);
+}
