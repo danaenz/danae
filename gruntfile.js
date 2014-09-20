@@ -28,6 +28,7 @@ module.exports = function (grunt) {
                     'bower_components/fit.js/fit.js',
                     'bower_components/jquery-form/jquery.form.js',
                     'bower_components/jquery-validate/dist/jquery.validate.js',
+                    'bower_components/selectivizr/selectivizr.js',
                     'js/thirdparty/jquery.drawDoughnutChart.js'
                 ],
                 dest: 'js/dist/thirdparty.combined.min.js'
@@ -52,8 +53,7 @@ module.exports = function (grunt) {
             javascript: {
                 files: {
                     'js/dist/thirdparty.combined.min.js': ['js/dist/thirdparty.combined.min.js'],
-                    'js/dist/main.min.js': ['js/dist/main.js'],
-                    'js/dist/selectivizr.min.js': ['bower_components/selectivizr/selectivizr.js']
+                    'js/dist/main.min.js': ['js/dist/main.js']
 
                 }
             }, IE8: {
